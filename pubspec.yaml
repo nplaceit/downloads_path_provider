@@ -1,0 +1,17 @@
+name: downloads_path_provider
+description: Flutter plugin to get the download directory for Android.
+version: 0.0.1
+author: Daniel MF <echo.dmf@gmail.com>
+homepage: https://github.com/nplaceit/downloads_path_provider
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: it.nplace.downloadspathprovider
+    pluginClass: DownloadsPathProviderPlugin
