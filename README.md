@@ -11,8 +11,8 @@ For help on editing plugin code, view the [documentation](https://flutter.io/dev
 
 ## Usage
 
-  * Add [downloads_path_provider](https://pub.dartlang.org/packages/downloads_path_provider#-installing-tab-) as a dependency in your pubspec.yaml file.  
-  Add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />` to your `AndroidManifest.xml`
+  * Add [downloads_path_provider](https://pub.dartlang.org/packages/downloads_path_provider#-installing-tab-) as a dependency in your pubspec.yaml file.
+  * Add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />` to your `AndroidManifest.xml`
 
 ## Example
 ```dart
