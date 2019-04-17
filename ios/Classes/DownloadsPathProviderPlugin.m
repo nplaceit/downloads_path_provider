@@ -10,7 +10,21 @@
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
-  result(FlutterMethodNotImplemented);
+  if ([call.method isEqualToString:@"getDownloadsDirectory"]) {
+    result([self getDownloadsDirectory]);
+  } else {
+    result(FlutterMethodNotImplemented);
+  }
+}
+
+- (NSString*)getDownloadsDirectory {
+  NSFileManager* manager = [NSFileManager defaultManager];
+  NSArray<NSURL*>* urls = [manager URLsForDirectory:NSDownloadsDirectory inDomains:NSUserDomainMask];
+  if ([urls count] >= 1) {
+    NSURL* url = urls[0];
+    return url.absoluteString;
+  }
+  return nil;
 }
 
 @end
