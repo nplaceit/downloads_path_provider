@@ -8,8 +8,6 @@ class DownloadsPathProvider {
       const MethodChannel('downloads_path_provider');
 
   static Future<Directory> get downloadsDirectory async {
-    if (Platform.isIOS)
-      throw UnsupportedError("Functionality not available on iOS");
     final String path = await _channel.invokeMethod('getDownloadsDirectory');
     if (path == null) {
       return null;
