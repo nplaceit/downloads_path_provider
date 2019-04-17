@@ -1,6 +1,6 @@
 # downloads_path_provider
 
-Flutter plugin to get the download directory for Android.
+Flutter plugin to get the downloads directory.
 
 ## Getting Started
 
