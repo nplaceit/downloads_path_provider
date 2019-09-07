@@ -18,13 +18,8 @@
 }
 
 - (NSString*)getDownloadsDirectory {
-  NSFileManager* manager = [NSFileManager defaultManager];
-  NSArray<NSURL*>* urls = [manager URLsForDirectory:NSDownloadsDirectory inDomains:NSUserDomainMask];
-  if ([urls count] >= 1) {
-    NSURL* url = urls[0];
-    return url.absoluteString;
-  }
-  return nil;
+  NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDownloadsDirectory, NSUserDomainMask, YES);
+  return paths.firstObject;
 }
 
 @end
