@@ -1,6 +1,8 @@
 # downloads_path_provider
 
-Flutter plugin to get the downloads directory.
+Flutter plugin to get the downloads directory.  
+
+> This plugin has lots of inconsistencies and should no **longer be used**. Feel free to fork and tweak it.
 
 ## Getting Started
 
